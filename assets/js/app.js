@@ -73,9 +73,6 @@ function render() {
   const allConnectBtns = document.querySelectorAll(".connect-pending");
   allConnectBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      if (getFromLocalStorage()) {
-        counter = getFromLocalStorage();
-      }
       if (btn.innerText === "Connect") {
         counter = getFromLocalStorage();
         btn.innerText = "Pending";
